@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- question 01  -->
+<a href="#" onclick="abc(); return false;">Click me</a>
+
+<!-- question no 02 -->
+<h2>Click on any Mobile Image</h2>
+
+<img src="https://images.unsplash.com/photo-1599950755346-a3e58f84ca63?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D" alt="Mobile 1" onclick="showAlert('Mobile 1')">
+<img src="https://plus.unsplash.com/premium_photo-1680681105831-93295698ebf2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1vYmlsZSUyMHBob25lfGVufDB8fDB8fHww" alt="Mobile 2" onclick="showAlert('Mobile 2')">
+<img src="https://images.unsplash.com/photo-1515529706504-b440b49fb63b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vYmlsZSUyMHBob25lfGVufDB8fDB8fHww" alt="Mobile 3" onclick="showAlert('Mobile 3')">
+
+
+<!-- question no 03  -->
+<h2>Student Records</h2>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Habiba</td>
+        <td>2nd year</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Saima</td>
+        <td>10th</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Areeba</td>
+        <td>11th</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Eman</td>
+        <td>12th</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+</table>
+
+<!-- question no 04 -->
+<img src="https://plus.unsplash.com/premium_photo-1678566153919-86c4ba4216f1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww" 
+alt="First Image" height="300px" 
+onmouseover="this.src='https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fHww'" 
+onmouseout="this.src='https://plus.unsplash.com/premium_photo-1678566153919-86c4ba4216f1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww'">
+
+<!-- ========================  question 05  ======================= -->
+<h2 id="h2">Counter: 0</h2>
+  
+<button onclick="increase()">Increase</button>
+<button onclick="decrease()">Decrease</button>
+
+
+
+<!-- end  -->
+  <script src="./app.js"></script>
+</body>
+</html>
